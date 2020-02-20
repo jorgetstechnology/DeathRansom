@@ -14,7 +14,7 @@ try:
         in_file.close()    
 except:
     fdate = date.today().strftime("%d")
-    with open('C:\\temp\\fdat.txt','w') as in_file:
+    with open('C:\\temp\\fdate.txt','w') as in_file:
         in_file.write(fdate)
         in_file.close()
 else:
