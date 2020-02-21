@@ -31,6 +31,7 @@ Checks if a debugger is active using the ctypes function: windll.kernel32.IsDebu
 Checks if the machine's mac is the same as the standard vms mac.
 
 - ### Anti-Sandbox
+****
                                                                                                                                          
 - Sleep-Acceleration
 
