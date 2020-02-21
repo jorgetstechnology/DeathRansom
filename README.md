@@ -22,17 +22,30 @@ So just transform deathransom.py into exe using pyinstaller in python2 version a
 ## Bypass Technics
 
 - ### Anti-Disassembly
-Creates several variables to try to make disassembly difficult
+Creates several variables to try to make disassembly difficult.
 
 - ### Anti-Debugger
 Checks if a debugger is active using the ctypes function: windll.kernel32.IsDebuggerPresent()
 
 - ### Anti-Vm
-Checks if the machine's mac is the same as the standard vms mac
+Checks if the machine's mac is the same as the standard vms mac.
 
 - ### Anti-Sandbox
 - Sleep-Acceleration
 
-Some sandboxes speed up sleep, this function checks if nothing out of the ordinary has occurred
+Some sandboxes speed up sleep, this function checks if nothing out of the ordinary has occurred.
+
+- Sandbox in Process
+Checks if have any sandbox in running processes
+
+- Display-Prompt
+Shows a message, if the user interact with the pop up, the malware will be executed.
 
 - Idle-Time
+Sleeps for a while and proceed. Some sandboxes wait for a while and stop running, that tries to bypass this.
+
+- Check-Click
+If the user does not click the number of times necessary the malware not will be executed.
+
+- Check-Cursor-Pos
+If the user not move the mouse in a seted time the malware not be executed.
