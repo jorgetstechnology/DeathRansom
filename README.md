@@ -21,14 +21,14 @@ So just transform deathransom.py into exe using pyinstaller in python2 version a
 
 ## Bypass Technics
 
-### Anti-Disassembly
+### - Anti-Disassembly
 Creates several variables to try to make disassembly difficult
 
-### Anti-Debugger
+### - Anti-Debugger
 Checks if a debugger is active using the ctypes function: windll.kernel32.IsDebuggerPresent()
 
-### Anti-Vm
+### - Anti-Vm
 Checks if the machine's mac is the same as the standard vms mac
 
-### Anti-Sandbox
+### - Anti-Sandbox
 #### Sleep-Acceleration
