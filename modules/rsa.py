@@ -3,7 +3,7 @@ from Crypto.Cipher import PKCS1_OAEP
 import learn_key
 import os,sys
 
-def encryptar(FileName,public_key=learn_key.public_key('https://pastebin.com/raw/FrNX6xHE')):
+def encryptar(FileName,public_key):
     try:
         public_key = RSA.importKey(public_key)
         encryptor = PKCS1_OAEP.new(public_key)
