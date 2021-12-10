@@ -1,4 +1,4 @@
-getmac
+getmacaddress
 datetime
 pycryptodome
 Crypto
